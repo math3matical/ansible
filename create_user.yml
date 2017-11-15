@@ -51,7 +51,7 @@
         path: "/stuff/{{ item }}"
         state: present
         create: yes
-        line: '{{ domain_admins }}'
+        line: '{{ item }}'
       with_items:
       - "{{ domain_admins }}"
 
