@@ -15,5 +15,7 @@
     - "{{ domain_admins }}"
   - name: lineinefile
     lineinfile:
-      path: /etc/httpd/conf/httpd.conf
+      path: /root/stuff
+      state: present
+      create: yes
       line: '{{ domain_admins }}'
