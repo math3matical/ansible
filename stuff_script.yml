@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ target }}"
+- hosts: "10.13.145.17"
   vars:
     vsphere_admins: ["vsphere_admin","vsphere_admin2","vsphere_admin3"]
     out: "butts"
