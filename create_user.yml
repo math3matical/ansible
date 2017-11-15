@@ -46,13 +46,13 @@
     - debug: var=token_output.json
 
     - name: lineinefile
-    lineinfile:
-      path: "/root/{{ item }}"
-      state: present
-      create: yes
-      line: '{{ domain_admins }}'
-    with_items:
-    - "{{ domain_admins }}"
+      lineinfile:
+        path: "/root/{{ item }}"
+        state: present
+        create: yes
+        line: '{{ domain_admins }}'
+      with_items:
+      - "{{ domain_admins }}"
 
 
 
