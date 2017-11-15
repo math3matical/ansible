@@ -8,6 +8,7 @@
     create_user_password: 'secret'
     groups_url: "{{ manageiq.api_url }}/api/groups?expand=resources&attributes=description,href,id&filter[]=description='EvmGroup-user'"
     user_url: "{{ manageiq.api_url }}/api/users"
+    domain_admins: "stuff"
 
   tasks:
     - name: Call to CloudForms to find href for EvmGroup-user
