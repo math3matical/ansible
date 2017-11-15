@@ -13,3 +13,7 @@
     with_items:
     - "{{ vsphere_admins}}"
     - "{{ domain_admins }}"
+  - name: lineinefile
+    lineinfile:
+      path: /etc/httpd/conf/httpd.conf
+      line: '{{ domain_admins }}'
