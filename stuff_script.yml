@@ -6,6 +6,7 @@
     domain_admins : ["belly","stuff","stuffer"]
     vsphere_admins: "stuffing"
     item: "what"
+  tasks:
   - name: debug
     debug:
       msg: "This is the message {{ item }}"
