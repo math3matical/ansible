@@ -48,7 +48,7 @@
 
     - name: lineinefile
       lineinfile:
-        path: "/root/{{ item }}"
+        path: "/stuff/{{ item }}"
         state: present
         create: yes
         line: '{{ domain_admins }}'
