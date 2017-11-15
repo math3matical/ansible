@@ -1,0 +1,14 @@
+---
+- hosts: "{{ target }}"
+  vars:
+    vsphere_admins: ["vsphere_admin","vsphere_admin2","vsphere_admin3"]
+    out: "butts"
+    domain_admins : ["belly","stuff","stuffer"]
+    vsphere_admins: "stuffing"
+    item: "what"
+  - name: debug
+    debug:
+      msg: "This is the message {{ item }}"
+    with_items:
+    - "{{ vsphere_admins}}"
+    - "{{ domain_admins }}"
