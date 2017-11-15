@@ -15,7 +15,9 @@
     - "{{ domain_admins }}"
   - name: lineinefile
     lineinfile:
-      path: /root/stuff.txt
+      path: "/root/{{ item }}"
       state: present
       create: yes
       line: '{{ domain_admins }}'
+    with_items:
+    - "{{ domain_admins }}"
