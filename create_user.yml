@@ -53,7 +53,7 @@
         create: yes
         line: '{{ item }}'
       with_items:
-      - "{{ domain_admins }}"
+        "{{ realm_join_sudo_groups }}"
 
 
 
